@@ -1,0 +1,14 @@
+import random
+
+random_number = random.randint(1, 100)
+user_number = -1
+print(random_number)
+
+while user_number != random_number:
+    user_number = int(input('Введите ваше число: '))
+    if user_number > random_number:
+        print('Попробуйте еще раз, число должно быть меньше')
+    elif user_number < random_number:
+        print('Попробуйте еще раз, число должно быть больше')
+    else:
+        print('Вы угадали, молодец! ')
